@@ -1,0 +1,18 @@
+[
+    {
+        "Bezeichnung": "",
+        "Von": "Grassistr. 10 04103 Leipzig, ",
+        "Nach": "Kohlerstr. 4, 04105 Leipzig",
+        "Datum": "2023-10-10T15:40:00.000Z",
+        "KmStart": 1234,
+        "KmEnde": 1255
+    },
+    {
+        "Bezeichnung": "",
+        "Von": "Grassistr. 10 04103 Leipzig, ",
+        "Nach": "Kohlerstr. 4, 04105 Leipzig",
+        "Datum": "2023-10-12T14:30:00.000Z",
+        "KmStart": 1234,
+        "KmEnde": 1255
+    }
+]

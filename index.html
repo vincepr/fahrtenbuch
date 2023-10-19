@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrtenbuch</title>
+    <link rel="stylesheet" href="./table.css">
+    <script defer src="./book.js"></script>
+</head>
+<body>
+    <input id="loadBtn" type="file" accept="application/json" value="Datei laden"/>
+    <input class="menu_button" type="button" value="Datei speichern" onclick="OnDownloadFile()"  /><br />
+
+    <form id="inputform" >
+        <div id="tablecontainer"> </div>
+        <button id="addBtn" type="submit">hinzufügen</button>
+    </form>
+</body>
+</html>
