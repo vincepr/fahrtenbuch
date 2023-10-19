@@ -1,2 +1,2 @@
 # aufgabe fahrtenbuch
-- https://vincepr/github.io/fahrtenbuch/index.html
+- https://vincepr.github.io/fahrtenbuch/index.html
