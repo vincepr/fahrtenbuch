@@ -1,18 +1,26 @@
 [
     {
-        "Bezeichnung": "",
-        "Von": "Grassistr. 10 04103 Leipzig, ",
-        "Nach": "Kohlerstr. 4, 04105 Leipzig",
-        "Datum": "2023-10-10T15:40:00.000Z",
-        "KmStart": 1234,
-        "KmEnde": 1255
+        "Bezeichnung": "Beschaffung",
+        "Von": "Grassistr. 10, 04105 Leipzig",
+        "Nach": "Grassistr. 25, 04105 Leipzig",
+        "KmStart": 10234,
+        "KmEnde": 10236,
+        "Datum": "2023-10-19T16:40"
     },
     {
-        "Bezeichnung": "",
-        "Von": "Grassistr. 10 04103 Leipzig, ",
-        "Nach": "Kohlerstr. 4, 04105 Leipzig",
-        "Datum": "2023-10-12T14:30:00.000Z",
-        "KmStart": 1234,
-        "KmEnde": 1255
+        "Bezeichnung": "Privat",
+        "Von": "Privat",
+        "Nach": "Privat",
+        "KmStart": 10236,
+        "KmEnde": 10312,
+        "Datum": "2023-10-15T18:00"
+    },
+    {
+        "Bezeichnung": "Unterricht anderer Standort",
+        "Von": "Grassistr. 10, 04105 Leipzig",
+        "Nach": "Andere Str. 25, 12345 Halle",
+        "KmStart": 10312,
+        "KmEnde": 10336,
+        "Datum": "2023-10-19T12:20"
     }
 ]
