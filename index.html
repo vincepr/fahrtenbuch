@@ -9,7 +9,12 @@
 </head>
 <body>
     <input id="loadBtn" type="file" accept="application/json" value="Datei laden"/>
-    <input class="menu_button" type="button" value="Datei speichern" onclick="OnDownloadFile()"  /><br />
+    <input class="menu_button" type="button" value="Datei speichern" onclick="OnDownloadFile()"  />
+    <span>
+
+        <input id="abFilterInput" type="date" /> bis <input id="bisFilterInput" type="date" />
+    </span>
+    <br />
 
     <form id="inputform" >
         <div id="tablecontainer"> </div>

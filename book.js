@@ -27,9 +27,32 @@ let fallbackData = [
 // set up our global variables
 var data = [];
 var maxKm = 0;
+var filterMin = new Date(new Date().getTime() - (7 * 24 * 60 * 60 * 1000)).toLocaleDateString('en-CA');
+var filterMax = new Date().toLocaleDateString('en-CA');
 data = loadFromLocalStorate();
-render(data);
+renderfilterdData(data);
 
+document.querySelector("#abFilterInput").value =  filterMin;
+document.querySelector("#bisFilterInput").value =  filterMax;
+
+document.querySelector("#abFilterInput").onchange = (event) => {
+    filterMin = event.target.value;
+    renderfilterdData(data);
+}
+
+document.querySelector("#bisFilterInput").onchange = (event) => {
+    filterMax = event.target.value;
+    renderfilterdData(data);
+}
+
+function renderfilterdData(data) {
+    let filteredData = data.filter((entry) => {
+        if (entry["Datum"] < filterMin) return false;
+        if (entry["Datum"] > filterMax) return false;
+        return true;
+    })
+    render(filteredData)
+}
 
 // submit form == btn hinzufuegen. Add one entry to our data
 const inputform = document.querySelector("#inputform")
@@ -69,12 +92,15 @@ document.querySelector("#loadBtn").onchange = (event) => {
         reader.onload = (fileEvent) => {
             const jsonObj = JSON.parse(fileEvent.target.result);
             data = jsonObj;
-            render(data)
+            saveToLocalStorage(data);
+            renderfilterdData(data)
             
         }
         reader.readAsText(file);
     } catch (error) {
         alert(error);
+    } finally {
+        event.target.files = null;
     }
 }
 
@@ -99,8 +125,6 @@ function render(data) {
     if (!data || !data.length || data.length == 0) {
         data = fallbackData;
     }
-
-    saveToLocalStorage(data);
     let table = document.createElement("table");
     container.appendChild(table);
     createTHead(table, data);
@@ -179,5 +203,3 @@ function render(data) {
         }
     }
 }
-
-
