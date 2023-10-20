@@ -8,17 +8,18 @@
     <script defer src="./book.js"></script>
 </head>
 <body>
-    <input id="loadBtn" type="file" accept="application/json" value="Datei laden"/>
-    <input class="menu_button" type="button" value="Datei speichern" onclick="OnDownloadFile()"  />
-    <span>
-
-        <input id="abFilterInput" type="date" /> bis <input id="bisFilterInput" type="date" />
-    </span>
+    <header style="display: flex; gap: 3rem">
+        <input class="smallButton" id="loadBtn" type="file" accept="application/json" value="Datei laden"/>
+        <input class="menu_button smallButton" type="button" value="Datei speichern" onclick="OnDownloadFile()"  />
+        <span>
+            <input class="smallButton" id="abFilterInput" type="date" /> bis <input class="smallButton" id="bisFilterInput" type="date" />
+        </span>
+    </header>
     <br />
 
     <form id="inputform" >
         <div id="tablecontainer"> </div>
-        <button id="addBtn" type="submit">hinzufügen</button>
+        <button class="smallButton" id="addBtn" type="submit">hinzufügen</button>
     </form>
 </body>
 </html>

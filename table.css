@@ -1,3 +1,11 @@
+:root {
+    --signal-color: rgb(49, 58, 93);
+    /* --second-color: rgb(97, 86, 86); */
+    --third-color: blue;
+    --fourth-color: rgb(91, 106, 165);
+    --input-bgcolor: #d8d7d7;
+
+}
 table {
     border-collapse: collapse;
     margin: 0;
@@ -116,7 +124,7 @@ table th {
     }
 
     table td {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #f3f3f3;
         display: block;
         font-size: .8em;
         text-align: right;
