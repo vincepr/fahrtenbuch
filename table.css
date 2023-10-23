@@ -6,6 +6,7 @@
     --input-bgcolor: #d8d7d7;
 
 }
+
 table {
     border-collapse: collapse;
     margin: 0;
@@ -62,7 +63,6 @@ table th {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     cursor: pointer;
-    min-height: 2rem;
 }
 
 .smallButton:hover,
@@ -93,6 +93,10 @@ table th {
     margin-top: 1rem;
     overflow-x: auto;
     transform: rotateX(180deg);
+}
+.custom-file-input::-webkit-file-upload-button {
+    width: 0;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 1100px) {
